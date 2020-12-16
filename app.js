@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("path");
 const PORT = 3000;
 
 const app = express();
@@ -10,5 +9,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("Server started at at 3000");
+  console.log(`Server started at at http://localhost:${PORT}`);
 });
